@@ -15,7 +15,7 @@ import edu.wpi.first.wpilibj.ADXRS450_Gyro;
 
 public class Robot extends IterativeRobot {
     Joystick controller;
-	RobotDrive drive;
+    RobotDrive drive;
     
 	
     public void robotInit() {
