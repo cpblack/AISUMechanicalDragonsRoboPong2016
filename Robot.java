@@ -14,6 +14,8 @@ import edu.wpi.first.wpilibj.ADXL362; //The Accelerometer
 import edu.wpi.first.wpilibj.ADXRS450_Gyro;
 
 public class Robot extends IterativeRobot {
+    Joystick controller;
+	RobotDrive drive;
     
 	
     public void robotInit() {
