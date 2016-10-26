@@ -16,8 +16,22 @@ import edu.wpi.first.wpilibj.ADXRS450_Gyro;
 public class Robot extends IterativeRobot {
     Joystick controller;
     RobotDrive drive;
-    
-	
+    double[] joy1;
+    double[] joy2;
+    joy1 = new double[2];
+    joy2 = new double[2];
+    public void updateStuff() {
+        joy1[0] = controller.getRawAxis(0); //left joystick
+    	joy1[1] = controller.getRawAxis(1);
+ //   	leftTrigger = controller.getRawAxis(2); //ball picker-upper Motors
+  //  	rightTrigger = controller.getRawAxis(3);
+    	joy2[0] = controller.getRawAxis(4); //right joystick
+    	joy2[1] = controller.getRawAxis(5);
+//    	leftBumper = controller.getRawButton(5); //Speed Boost
+  //  	xButton = controller.getRawButton(3);
+    //	yButton = controller.getRawButton(4);
+    	deadZone(); //See below
+    }
     public void robotInit() {
     	
     }
